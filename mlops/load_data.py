@@ -14,5 +14,7 @@ def load_train():
 
 if __name__==  "__main__":
      
-    df = pd.DataFrame(X)
+    X_features = pd.DataFrame(X)
+    y_target = pd.DataFrame(y)
+    df = pd.concat([X,y],axis=1)
     print(df)
