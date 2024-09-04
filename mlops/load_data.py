@@ -3,6 +3,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import pandas as pd
+import numpy as np
 
 data_iris = load_iris()
 X = data_iris.data 
@@ -14,7 +15,6 @@ def load_train():
 
 if __name__==  "__main__":
      
-    X_features = pd.DataFrame(X)
-    y_target = pd.DataFrame(y)
-    df = pd.concat([X,y],axis=1)
-    print(df)
+    X_features = pd.DataFrame(X, columns=['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)'])
+    y_target = pd.DataFrame(y, columns=['target'])
+    print( X_features)
