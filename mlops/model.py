@@ -1,15 +1,7 @@
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import ConfusionMatrixDisplay, accuracy_score
 
-
-<<<<<<< HEAD
-X_train, X_test, y_train, y_test = load_train()
-
-
-model = LogisticRegression(max_iter=200)
-=======
 class ModelRegression:
->>>>>>> fd9380c3edaca24d1efee86c6dff2626aa1edd39
 
     def __init__(self):
        self.model = LogisticRegression(max_iter=200)
