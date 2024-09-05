@@ -1,5 +1,4 @@
 from mlops.load_data import load_train
-#from mlops.test_unit import test_unit
 from sklearn.datasets import load_iris
 from mlops.model import  ModelRegression
 
