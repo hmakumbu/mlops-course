@@ -4,6 +4,8 @@ from sklearn.metrics import ConfusionMatrixDisplay, accuracy_score
 
 
 X_train, X_test, y_train, y_test = load_train()
+
+
 model = LogisticRegression(max_iter=200)
 
 model.fit(X_train,y_train)
